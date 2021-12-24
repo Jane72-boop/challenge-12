@@ -1,0 +1,252 @@
+html {
+  font-size: 62.5%;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+}
+
+.comp {
+  width: Min(90%, 70em);
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+header {
+  width: Min(100%, 60em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2.5em;
+}
+
+header .logo {
+  width: Min(100%, 7em);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .logo img {
+  width: Min(100%, 7em);
+  height: auto;
+}
+
+.subFormCont {
+  width: Min(100%, 60em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.subFormCont .words h1 {
+  font-size: 4rem;
+  margin-bottom: .3em;
+}
+
+.subFormCont .words h1 span {
+  color: #969696;
+  font-weight: 300;
+}
+
+.subFormCont .words h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.subFormCont .subForm {
+  margin: 0 auto;
+  padding: 0;
+  gap: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: 'email notify' 'error .';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subFormCont .subForm .inputDiv {
+  width: Min(95%, 50em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.subFormCont .subForm .inputDiv input {
+  width: Min(100%, 50em);
+  font-family: inherit;
+  padding: .8em 1em;
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.subFormCont .subForm .inputDiv input[type=email]:focus {
+  outline: 2px solid #4f7df3;
+}
+
+.subFormCont .subForm .inputDiv .errorInput {
+  outline: 2px solid #ff5263;
+}
+
+.subFormCont .subForm .errorTxt {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: error;
+  text-align: left;
+  padding-left: 1em;
+  font-size: 1.4rem;
+  color: #ff5263;
+  font-style: italic;
+}
+
+.subFormCont .subForm button {
+  border: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #4f7df3;
+  color: #fff;
+  padding: .8em 3em;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: notify;
+}
+
+.subFormCont .subForm button:hover {
+  -webkit-box-shadow: 0 0 10px #4f7df3;
+          box-shadow: 0 0 10px #4f7df3;
+  cursor: pointer;
+}
+
+.heroImg {
+  width: Min(90%, 90em);
+  margin: 5em auto;
+}
+
+.heroImg img {
+  width: 100%;
+}
+
+footer {
+  width: Min(50%, 60em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .socMedLogos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 6em;
+  margin-bottom: 2em;
+}
+
+footer .socMedLogos i {
+  font-size: 3em;
+  color: #4f7df3;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: .4em;
+  border-radius: 100%;
+  height: 100%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+footer .socMedLogos i:hover {
+  color: #fff;
+  background-color: #4f7df3;
+  cursor: pointer;
+}
+
+footer .socMedLogos .fa-facebook-f {
+  width: 1.8em;
+  height: 1.8em;
+}
+
+footer p {
+  font-size: 1.2rem;
+  color: #969696;
+}
+
+@media only screen and (max-width: 670px) {
+  .subFormCont .subForm {
+    width: Min(100%, 60em);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subFormCont .subForm button {
+    padding: .8em 5em;
+  }
+  .subFormCont .subForm button:hover {
+    -webkit-box-shadow: 0 0 10px #4f7df3;
+            box-shadow: 0 0 10px #4f7df3;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=main.css.map */
